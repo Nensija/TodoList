@@ -1,0 +1,179 @@
+:root {
+  --primary-color: #77cff2; /*pogas un virsraksts*/
+  --background-color: #e8f7fd;
+  /*pogu krāsas*/
+  --save-button-color: #abcaff;
+  --save-icon-color: #517cc8;
+  --completed-button-color: #9ce3c2;
+  --completed-icon-color: #3e9c35;
+  --recreate-button-color: #abcaff;
+  --recreate-icon-color: #517cc8;
+  --deleted-button-color: #ff7676;
+  --deleted-icon-color: #ff0000;
+  --edit-button-color: #fde9a4;
+  --edit-icon-color: #f8d75b;
+  --top-button-color: rgb(22, 44, 126);
+  /**/
+  --deleted-color: red;
+  --completed-color: rgb(62, 156, 53);
+  --todo-text-color: black;
+  --todo-background-color: #b9e7f8; /*darbu aizmugre*/
+  --button-active-color: #2c6d93;
+  --todo-shadow-color: rgba(0, 0, 0, 20%);
+
+  --searchIconXLocation: 25px;
+}
+.task-input ion-icon {
+  position: absolute;
+  top: 50%;
+  color: #999;
+  font-size: 16px;
+  transform: translate(8px, -450%);
+}
+
+.iconMeklet {
+  position: relative;
+  transform: translate(var(--searchIconXLocation), 0px);
+  color: #999;
+}
+
+.MainWiew {
+  text-align: center;
+  background-color: var(--background-color);
+  width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 400px;
+}
+.TitleView {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.TitleIconStyle {
+  /*virsraksta ikona*/
+  color: var(--button-active-color);
+  border: var(--primary-color);
+  border-width: 4px;
+  border-style: solid;
+  padding: 5px;
+  width: 400px;
+}
+
+.RowStyle {
+  margin-top: 12px;
+}
+.RowInputStyle {
+  margin-top: 10px;
+  margin-left: -15px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.RowInputStyle1st {
+  text-align: left;
+}
+
+.InputText {
+  /*pievienot darbu*/
+  padding: 6px;
+  border-radius: 4px;
+  border: 2px solid var(--primary-color);
+  width: 300px;
+  padding-left: var(--searchIconXLocation);
+}
+.buttonStyle {
+  /*poga + - u.tt*/
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  background-color: var(--top-button-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  margin-left: 5px;
+}
+.BtnStyle2 {
+  /*aukšējās pogas 4*/
+  font-size: 12px;
+  border-radius: 5px;
+  color: var(--top-button-color);
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  border-width: 1px;
+  font-weight: 500px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+.BtnStyle2:hover {
+  background: var(--button-active-color);
+  color: var(--background-color);
+}
+.BtnStyle2:focus {
+  /*pievienotie darbi*/
+  color: var(--button-active-color);
+  background: var(--background-color);
+}
+.TodoItemTextDeleted {
+  text-decoration: line-through;
+  color: var(--deleted-color);
+}
+.TodoItemTextcompleted {
+  color: var(--completed-color);
+  font-weight: bold;
+}
+.TodoItemText {
+  color: var(--todo-text-color);
+}
+.RowItemStyle {
+  /*pildāmie darbi*/
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--todo-background-color);
+  border-radius: 4px;
+  margin: 2px 2px 10px 2px;
+  padding-left: 12px;
+  box-shadow: 0 0.5rem 1.2rem var(--todo-shadow-color);
+  display: grid;
+  grid-template-columns: 16px auto 100px;
+  grid-gap: 10px;
+  width: 638px;
+}
+.RowItemStyleText {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.RowItemStyleInput {
+  width: 95%;
+}
+.saveButton {
+  background-color: var(--save-button-color);
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.editButton {
+  background-color: var(--edit-button-color);
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border-color: var(--edit-button-color);
+}
+.completedButton {
+  background-color: var(--completed-button-color);
+  border-radius: 3px;
+  border-color: var(--completed-button-color);
+}
+.deletedButton {
+  background-color: var(--deleted-button-color);
+  border-radius: 3px;
+  border-color: var(--deleted-button-color);
+}
+.recreateButton {
+  background-color: var(--recreate-button-color);
+  border-radius: 3px;
+}
+.faPaperclip {
+  color: var(--top-button-color);
+}

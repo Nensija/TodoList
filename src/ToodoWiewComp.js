@@ -21,7 +21,7 @@ import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 const arraObjects = [
   {
     id: 1,
-    text: "Apliet puķes",
+    text: "Apliet puķes un kaktusus",
     completed: false,
     deleted: false,
     isEdit: false

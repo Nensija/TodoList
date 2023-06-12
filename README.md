@@ -7,7 +7,7 @@
 1. Vispirms noklonējiet repozitoriju uz savu lokālo datoru:
 
 ```shell
-git clone https://github.com/jkristins/TodoList.git
+git clone https://github.com/Nensija/TodoList.git
 ```
 
 2. Pāriet uz projekta direktoriju:
